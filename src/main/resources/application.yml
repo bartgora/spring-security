@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-security
+  datasource:
+    url: jdbc:h2:mem:ssia
+    username: sa
+    password:
+  sql:
+    init:
+      mode: always
+server:
+  ssl:
+    key-store-type: PKCS12
+    key-store: classpath:certificate.p12
+    key-store-password: 12345678
